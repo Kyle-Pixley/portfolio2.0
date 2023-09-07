@@ -1,0 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: max(40px, 8vh);
+    /* does whatever the max is ^^ */
+}
