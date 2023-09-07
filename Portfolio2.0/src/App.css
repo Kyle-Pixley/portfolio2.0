@@ -5,5 +5,49 @@
 
 body {
     margin: max(40px, 8vh);
+    background-color: black;
     /* does whatever the max is ^^ */
 }
+
+#outer-frame {
+    border: 1px solid white;
+    padding: 30px;
+    position: absolute;
+    top: 40px;
+    bottom: 40px;
+    left: 40px;
+    right: 40px
+}
+
+#spacer {
+    height: 20px;
+}
+
+#button-parent {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: flex-start;
+}
+
+#home-link,
+#resume-link, 
+#projects-link, 
+#contact-link {
+    margin: 3px;
+    border: none;
+    cursor: pointer;
+    background: none!important;
+    padding: 3px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+
+#home-link:hover,
+#resume-link:hover, 
+#projects-link:hover, 
+#contact-link:hover {
+    color: darkgray;
+}
+
