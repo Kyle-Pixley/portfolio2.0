@@ -1,16 +1,16 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Header from './Components/Header/Header.jsx'
 import Nav from './Components/Nav/nav.jsx'
 import Lightdark from './Components/lightdark/lightdark.jsx'
 import './App.css'
 
-function App() {
+function App({ style, toggleDarkMode, isDarkMode }) {
 
   return (
     <>
-      <div id='outer-frame'>
+      <div id='outer-frame' style={style}>
         <div id='inner-frame'>
-          <Header />
+          <Header darkOrLight={style}/>
           <Nav />
           <div id='spacer'></div>
           <div id='button-parent'>
@@ -21,7 +21,7 @@ function App() {
             </div>
         </div>
       </div>
-      <Lightdark />
+      <Lightdark toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
     </>
   )
 }

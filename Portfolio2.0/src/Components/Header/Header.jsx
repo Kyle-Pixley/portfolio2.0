@@ -1,11 +1,13 @@
 import React from 'react'
 import "./Header.css"
 
-function Header() {
+function Header({ darkOrLight }) {
+
+  
   return (
-    <div>
-            <h1 id="header-name">Kyle Pixley</h1>
-            <p id='header-title'>Software Engineer</p>
+    <div style={darkOrLight}>
+            <h1  style={darkOrLight} id="header-name">Kyle Pixley</h1>
+            <p  style={darkOrLight} id='header-title'>Software Engineer</p>
     </div>
   )
 }

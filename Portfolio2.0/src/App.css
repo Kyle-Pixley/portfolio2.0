@@ -5,7 +5,7 @@
 
 body {
     margin: max(40px, 8vh);
-    background-color: black;
+    /* background-color: black; */
     /* does whatever the max is ^^ */
 }
 
@@ -41,7 +41,7 @@ body {
     padding: 3px;
     font-size: 15px;
     font-weight: 600;
-    color: white;
+    /* color: white; */
 }
 
 #home-link:hover,
