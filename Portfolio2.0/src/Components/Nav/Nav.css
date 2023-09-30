@@ -1,6 +1,17 @@
-#nav-links {
-    display: flex;
-    flex-direction: column;
+#dark-mode-links {
     margin-top: 8px;
     color: white;
+}
+#dark-mode-links:visited {
+    color: white;
+}
+
+/* TODO figure out why margin does nothing when not in display flex. also cant do flexDirection: row??? */
+
+#light-mode-links {
+    margin-top: 8px;
+    color: black;
+}
+#light-mode-links:visited {
+    color: black;
 }

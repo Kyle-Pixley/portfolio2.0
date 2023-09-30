@@ -23,6 +23,12 @@
     align-items: center;
     justify-content: flex-start;
   }
+
+  #buttonText {
+    text-indent: 150%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
   
   input {
     position: absolute;

@@ -1,12 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import './lightdark.css';
 
-function LightDark() {
-const [isDarkMode, setIsDarkMode] = useState(true);
+function LightDark({ toggleDarkMode }) {
+// const [isDarkMode, setIsDarkMode] = useState(true);
 
-const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-};
+// ! Use state is in App.jsx now to be able to change its value from here 
+
+// const toggleDarkMode = () => {
+//     console.log('toggleDarkMode')
+//     setIsDarkMode(!isDarkMode);
+//     console.log(buttonText)
+//     console.log(isDarkMode)
+// };
 
 const darkModeStyle = {
     backgroundColor: '#0a0a0a',
@@ -18,26 +23,31 @@ const lightModeStyle = {
     color: '#0a0a0a',
 };
 
-const style = isDarkMode ? darkModeStyle : lightModeStyle;
+// const style = isDarkMode ? darkModeStyle : lightModeStyle;
 
-useEffect(() => {
-    for (const property in style) {
-    document.body.style[property] = style[property];
-    }
-}, [style]);
+// useEffect(() => {
+//     for (const property in style) {
+//     document.body.style[property] = style[property];
+//     }
+// }, [style]);
 
-const buttonText = isDarkMode ? 'Light Mode' : 'Dark Mode';
+// const buttonText = isDarkMode ? 'Light Mode' : 'Dark Mode';
 
 return (
-    <button onClick={toggleDarkMode} className='toggle-switch'>
-    <label>
-        {buttonText}
-        <input
-        type='checkbox'
-        onChange={toggleDarkMode}
-        />
-        <span className='slider'></span>
-    </label>
+    <button 
+    // onClick={toggleDarkMode}  
+    //Why did it start working after I console.logged jello????
+
+    // onChange={toggleDarkMode} 
+    className='toggle-switch'>
+        <label id="buttonText">
+            {/* {buttonText} */}
+            <input
+            type='checkbox'
+            onChange={toggleDarkMode}
+            />
+            <span className='slider'></span>
+        </label>
     </button>
     );
 }
