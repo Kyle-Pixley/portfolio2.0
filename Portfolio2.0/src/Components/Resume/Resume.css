@@ -1,0 +1,18 @@
+#resume-parent {
+    position: absolute;
+    bottom: 10px;
+    right: 13px;
+    width: 15vw;
+}
+
+#resume-dark {
+    color: white;
+    font-size: 17px;
+    text-align: right;
+}
+
+#resume-light {
+    color: black;
+    font-size: 17px;
+    text-align: right;
+}

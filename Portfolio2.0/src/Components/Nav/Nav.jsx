@@ -5,10 +5,13 @@ function Nav({ isDarkMode }) {
 
     return (
 
-        <nav>
+        <nav id='nav-parent'>
             <a 
                 id={isDarkMode ? 'dark-mode-links' : 'light-mode-links'}
-                href='https://www.linkedin.com/in/  kyle-pixley-257686279/'   target='_blank'>
+                style={{ marginTop: '30px' }}
+                href='https://www.linkedin.com/in/  kyle-pixley-257686279/'  
+                // !link is 404 ^
+                target='_blank'>
                     Linkin
             </a>
             <a 
