@@ -1,4 +1,7 @@
-#name {
-    margin-top: 10px;
-    color: black;
+#header-name {
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#header-title {
+    font-family: Arial, Helvetica, sans-serif;
 }
