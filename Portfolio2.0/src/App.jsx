@@ -1,9 +1,10 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import Header from './Components/Header/Header.jsx'
 import Nav from './Components/Nav/nav.jsx'
 import Lightdark from './Components/lightdark/lightdark.jsx'
 import Home from './Components/Home/Home.jsx'
 import Resume from './Components/Resume/Resume.jsx'
+import Contact from './Components/Contact/Contact.jsx'
 import './App.css'
 
 
@@ -15,7 +16,7 @@ const [activeComponent, setActiveComponent] = useState('home');
 
 const handleButtonClick = (componentName) => {
   setActiveComponent(componentName);
-}
+};
 
 const toggleDarkMode = () => {
   console.log('toggleDarkMode')
@@ -23,20 +24,56 @@ const toggleDarkMode = () => {
   console.log(isDarkMode)
 };
 
-const darkModeStyle = {
-  border: '1px solid white',
+const handleHomeClassName = () => {
+  if (isDarkMode && activeComponent === 'home'){
+    return 'dark-mode-buttons active-button'
+  } else if (!isDarkMode && activeComponent ==='home'){
+    return 'light-mode-buttons active-button'
+  } else if (!isDarkMode && activeComponent !== 'home'){
+    return 'light-mode-buttons'
+  } else if (isDarkMode && activeComponent !== 'home'){
+    return 'dark-mode-buttons'
+  } else { return 'cheese' }
 }
 
-const lightModeStyle = {
-  border: '1px solid black',
+const handleResumeClassName = () => {
+  if (isDarkMode && activeComponent === 'resume') {
+    return 'dark-mode-buttons active-button'
+  } else if (isDarkMode && activeComponent !== 'resume'){ return 'dark-mode-buttons'
+  } else if (!isDarkMode && activeComponent === 'resume') {
+    return 'light-mode-buttons active-button'
+  } else if (!isDarkMode && activeComponent !== 'resume') {
+    return 'light-mode-buttons'
+  } else { return 'cheese'}
 }
 
-const style = isDarkMode ? darkModeStyle : lightModeStyle
+const handleProjectsClassName = () => {
+  if (isDarkMode && activeComponent === 'projects') {
+    return 'dark-mode-buttons active-button'
+  } else if (isDarkMode && activeComponent !== 'projects'){ return 'dark-mode-buttons'
+  } else if (!isDarkMode && activeComponent === 'projects') {
+    return 'light-mode-buttons active-button'
+  } else if (!isDarkMode && activeComponent !== 'projects') {
+    return 'light-mode-buttons'
+  } else { return 'cheese'}
+}
+
+const handleContactClassName = () => {
+  if (isDarkMode && activeComponent === 'contact') {
+    return 'dark-mode-buttons active-button'
+  } else if (isDarkMode && activeComponent !== 'contact'){ return 'dark-mode-buttons'
+  } else if (!isDarkMode && activeComponent === 'contact') {
+    return 'light-mode-buttons active-button'
+  } else if (!isDarkMode && activeComponent !== 'contact') {
+    return 'light-mode-buttons'
+  } else { return 'cheese'}
+}
+
+//TODO write this for the other 2 buttons ^^^^
 
   return (
     <div id={isDarkMode ? 'body-dark' : 'body-light'}>
-      <div id='outer-frame'
-        style={style}
+      <div id={isDarkMode ? 'outer-frame-dark' : 'outer-frame-light'}
       >
         <div id='inner-frame' >
           <Header 
@@ -50,43 +87,45 @@ const style = isDarkMode ? darkModeStyle : lightModeStyle
               <button
                 onClick={() => handleButtonClick('home')}
                 id='home-link' 
-
-                className={isDarkMode ? 'dark-mode-buttons' : 'light-mode-buttons'}
-
-                // className={activeComponent === 'home' ? 'active-button':''}
-                //TODO ^ do these classes as an if/else in a seperate function::                if isdark and active classname='dark-mode-button active-button' / and so on 
-
+                className={handleHomeClassName()}
                 href=''>
                 Home
+                {activeComponent === 'home' && <span className={isDarkMode ? 'active-bullet-dark' : 'active-bullet-light'}
+                ></span>}
               </button>
 
               <button 
                 onClick={() => handleButtonClick('resume')}
                 id='resume-link' 
-                className={isDarkMode ? 'dark-mode-buttons' : 'light-mode-buttons'}
+                className={handleResumeClassName()}
                 href=''>
                   Resume
+                  {activeComponent === 'resume' && <span className={isDarkMode ? 'active-bullet-dark' : 'active-bullet-light'}></span>}
               </button>
 
               <button 
                 onClick={() => handleButtonClick('projects')}
                 id='projects-link' 
-                className={isDarkMode ? 'dark-mode-buttons' : 'light-mode-buttons'}
+                className={handleProjectsClassName()}
                 href=''>
                   Projects
+                  {activeComponent === 'projects' && <span className={isDarkMode ? 'active-bullet-dark' : 'active-bullet-light'}></span>}
               </button>
 
               <button 
                 onClick={() => handleButtonClick('contact')}
                 id='contact-link' 
-                className={isDarkMode ? 'dark-mode-buttons' : 'light-mode-buttons'}
+                className={handleContactClassName()}
                 href=''>
                   Contact
+                  {activeComponent === 'contact' && <span className={isDarkMode ? 'active-bullet-dark' : 'active-bullet-light'}></span>}
               </button>
             </div>
 
             {activeComponent === 'home' && <Home isDarkMode={isDarkMode}/>}
             {activeComponent === 'resume' && <Resume isDarkMode={isDarkMode}/>}
+
+            {activeComponent === 'contact' && <Contact isDarkMode={isDarkMode} />}
             
 
         </div>

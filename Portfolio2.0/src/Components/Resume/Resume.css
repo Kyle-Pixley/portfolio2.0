@@ -16,3 +16,52 @@
     font-size: 17px;
     text-align: right;
 }
+
+#download-resume {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 13vw;
+}
+
+#download-text-dark {
+    color: white;
+    font-size: 17px;
+}
+#download-text-light {
+    color: black;
+    font-size: 17px;
+}
+
+#download-image-dark {
+    filter: brightness(0) invert(1) brightness(1.5);
+    height: 17px;
+}
+#download-image-light {
+    color: black;
+    height: 17px;
+}
+
+@media (max-width: 480px){
+    #resume-parent {
+        width: 70vw;
+        bottom: 65px;
+        line-height: 25px;
+    }
+    #resume-dark, #resume-light {
+        font-size: 20px;
+    }
+    #download-resume {
+        width: 14em;
+        left: auto;
+        right: 8px;
+    }
+    #download-text-dark, #download-text-light {
+        font-size: 20px;
+    }
+    #download-image-dark, #download-image-light {
+        height: 30px;
+    }
+}
