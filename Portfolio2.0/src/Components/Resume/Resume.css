@@ -7,12 +7,273 @@
 
 #resume-dark {
     color: white;
-    font-size: 17px;
+    font-size: 18px;
     text-align: right;
 }
 
 #resume-light {
     color: black;
-    font-size: 17px;
+    font-size: 18px;
     text-align: right;
+}
+
+#download-resume {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 13vw;
+}
+
+#download-text-dark {
+    color: white;
+    font-size: 17px;
+}
+#download-text-light {
+    color: black;
+    font-size: 17px;
+}
+
+#download-image-dark {
+    filter: brightness(0) invert(1) brightness(1.5);
+    height: 17px;
+}
+#download-image-light {
+    color: black;
+    height: 17px;
+}
+
+.resume-text-piece {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+}
+
+#resume-text-1 {
+    animation: fade-in 0.4s 0.05s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-2 {
+    animation: fade-in 0.4s 0.1s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-3 {
+    animation: fade-in 0.4s 0.15s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-4 {
+    animation: fade-in 0.4s 0.2s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-5 {
+    animation: fade-in 0.4s 0.25s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-6 {
+    animation: fade-in 0.4s 0.3s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-7 {
+    animation: fade-in 0.4s 0.35s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-8 {
+    animation: fade-in 0.4s 0.4s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-9 {
+    animation: fade-in 0.4s 0.45s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-10 {
+    animation: fade-in 0.4s 0.5s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-11 {
+    animation: fade-in 0.4s 0.55s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-12 {
+    animation: fade-in 0.4s 0.6s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-13 {
+    animation: fade-in 0.4s 0.65s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-14 {
+    animation: fade-in 0.4s 0.7s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-15 {
+    animation: fade-in 0.4s 0.75s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-16 {
+    animation: fade-in 0.4s 0.8s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-17 {
+    animation: fade-in 0.4s 0.85s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-18 {
+    animation: fade-in 0.4s 0.9s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-19 {
+    animation: fade-in 0.4s 0.95s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-20 {
+    animation: fade-in 0.4s 1s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-21 {
+    animation: fade-in 0.4s 1.05s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-22 {
+    animation: fade-in 0.4s 1.1s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-23 {
+    animation: fade-in 0.4s 1.15s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-24 {
+    animation: fade-in 0.4s 1.2s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-25 {
+    animation: fade-in 0.4s 1.25s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-26 {
+    animation: fade-in 0.4s 1.3s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-27 {
+    animation: fade-in 0.4s 1.35s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-28 {
+    animation: fade-in 0.4s 1.4s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-29 {
+    animation: fade-in 0.4s 1.45s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-30 {
+    animation: fade-in 0.4s 1.5s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-31 {
+    animation: fade-in 0.4s 1.55s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-32 {
+    animation: fade-in 0.4s 1.6s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-33 {
+    animation: fade-in 0.4s 1.65s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-34 {
+    animation: fade-in 0.4s 1.7s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-35 {
+    animation: fade-in 0.4s 1.75s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-36 {
+    animation: fade-in 0.4s 1.8s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-37 {
+    animation: fade-in 0.4s 1.85s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-38 {
+    animation: fade-in 0.4s 1.9s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-39 {
+    animation: fade-in 0.4s 1.95s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-40 {
+    animation: fade-in 0.4s 2s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-41 {
+    animation: fade-in 0.4s 2.05s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-42 {
+    animation: fade-in 0.4s 2.1s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-43 {
+    animation: fade-in 0.4s 2.15s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-44 {
+    animation: fade-in 0.4s 2.2s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-45 {
+    animation: fade-in 0.4s 2.25s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-46 {
+    animation: fade-in 0.4s 2.3s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-47 {
+    animation: fade-in 0.4s 2.35s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-48 {
+    animation: fade-in 0.4s 2.4s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-49 {
+    animation: fade-in 0.4s 2.45s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-50 {
+    animation: fade-in 0.4s 2.5s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-51 {
+    animation: fade-in 0.4s 2.55s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-52 {
+    animation: fade-in 0.4s 2.6s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-53 {
+    animation: fade-in 0.4s 2.65s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-54 {
+    animation: fade-in 0.4s 2.7s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-55 {
+    animation: fade-in 0.4s 2.75s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-56 {
+    animation: fade-in 0.4s 2.8s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-57 {
+    animation: fade-in 0.4s 2.85s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-58 {
+    animation: fade-in 0.4s 2.9s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-59 {
+    animation: fade-in 0.4s 2.95s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-60 {
+    animation: fade-in 0.4s 3s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+#resume-text-61 {
+    animation: fade-in 0.4s 3.05s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+
+.download-text-piece { 
+    transform: scale(.9);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89,1);
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+}
+
+.download-text-1 {
+    animation: fade-in 0.4s 3.6s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+.download-text-2 {
+    animation: fade-in 0.4s 3.4s forwards cubic-bezier(0.11, 0, 0.5,0);
+}
+
+
+@media (max-width: 480px){
+    #resume-parent {
+        width: 70vw;
+        bottom: 65px;
+        line-height: 25px;
+    }
+    #resume-dark, #resume-light {
+        font-size: 20px;
+    }
+    #download-resume {
+        width: 14em;
+        left: auto;
+        right: 8px;
+    }
+    #download-text-dark, #download-text-light {
+        font-size: 20px;
+    }
+    #download-image-dark, #download-image-light {
+        height: 30px;
+    }
+}
+
+@keyframes scale {
+    100% {
+        transform: scale(1);
+    }
 }
