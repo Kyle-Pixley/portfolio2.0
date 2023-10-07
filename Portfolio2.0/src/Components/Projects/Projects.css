@@ -1,0 +1,23 @@
+#projects-container {
+    position: absolute;
+    right: 18px;
+    bottom: 18px;
+    overflow: hidden;
+}
+#game {
+    background-image: url('../../assets/game-photo.webp');
+    background-size: cover;
+    height: 100px;
+    width: 150px;
+    transform: translateX(100%);
+    animation: slide-left 0.7s ease-in-out forwards 1s;
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

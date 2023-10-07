@@ -6,9 +6,9 @@ function Contact({ isDarkMode }) {
     <div id='contact-parent'>
 
         <div id={isDarkMode ? 'contact-dark' : 'contact-light'} className='email'>
-            <span id='email-1' className='email-piece'>kyle7</span>
+            <span id='email-1' className='email-piece'>Kyle7</span>
 
-            <span id='email-2' className='email-piece'>pixley</span>
+            <span id='email-2' className='email-piece'>Pixley</span>
 
             <span id='email-3' className='email-piece'>@gmail</span>
 

@@ -4,6 +4,7 @@ import Nav from './Components/Nav/nav.jsx'
 import Lightdark from './Components/lightdark/lightdark.jsx'
 import Home from './Components/Home/Home.jsx'
 import Resume from './Components/Resume/Resume.jsx'
+import Projects from './Components/Projects/Projects.jsx'
 import Contact from './Components/Contact/Contact.jsx'
 import './App.css'
 
@@ -124,7 +125,7 @@ const handleContactClassName = () => {
 
             {activeComponent === 'home' && <Home isDarkMode={isDarkMode}/>}
             {activeComponent === 'resume' && <Resume isDarkMode={isDarkMode}/>}
-
+            {activeComponent === 'projects' && <Projects isDarkMode={isDarkMode}/>}
             {activeComponent === 'contact' && <Contact isDarkMode={isDarkMode} />}
             
 
