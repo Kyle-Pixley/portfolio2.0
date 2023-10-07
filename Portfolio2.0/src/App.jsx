@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Header from './Components/Header/Header.jsx'
 import Nav from './Components/Nav/nav.jsx'
 import Lightdark from './Components/lightdark/lightdark.jsx'
@@ -6,6 +6,7 @@ import Home from './Components/Home/Home.jsx'
 import Resume from './Components/Resume/Resume.jsx'
 import Projects from './Components/Projects/Projects.jsx'
 import Contact from './Components/Contact/Contact.jsx'
+
 import './App.css'
 
 
@@ -70,7 +71,6 @@ const handleContactClassName = () => {
   } else { return 'cheese'}
 }
 
-//TODO write this for the other 2 buttons ^^^^
 
   return (
     <div id={isDarkMode ? 'body-dark' : 'body-light'}>
@@ -88,29 +88,35 @@ const handleContactClassName = () => {
               <button
                 onClick={() => handleButtonClick('home')}
                 id='home-link' 
+
                 className={handleHomeClassName()}
                 href=''>
                 Home
                 {activeComponent === 'home' && <span className={isDarkMode ? 'active-bullet-dark' : 'active-bullet-light'}
                 ></span>}
+
               </button>
 
               <button 
                 onClick={() => handleButtonClick('resume')}
                 id='resume-link' 
+
                 className={handleResumeClassName()}
                 href=''>
                   Resume
                   {activeComponent === 'resume' && <span className={isDarkMode ? 'active-bullet-dark' : 'active-bullet-light'}></span>}
+
               </button>
 
               <button 
                 onClick={() => handleButtonClick('projects')}
                 id='projects-link' 
+
                 className={handleProjectsClassName()}
                 href=''>
                   Projects
                   {activeComponent === 'projects' && <span className={isDarkMode ? 'active-bullet-dark' : 'active-bullet-light'}></span>}
+
               </button>
 
               <button 
@@ -120,6 +126,7 @@ const handleContactClassName = () => {
                 href=''>
                   Contact
                   {activeComponent === 'contact' && <span className={isDarkMode ? 'active-bullet-dark' : 'active-bullet-light'}></span>}
+
               </button>
             </div>
 
@@ -127,6 +134,7 @@ const handleContactClassName = () => {
             {activeComponent === 'resume' && <Resume isDarkMode={isDarkMode}/>}
             {activeComponent === 'projects' && <Projects isDarkMode={isDarkMode}/>}
             {activeComponent === 'contact' && <Contact isDarkMode={isDarkMode} />}
+
             
 
         </div>

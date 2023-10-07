@@ -2,6 +2,8 @@
     margin-top: 8px;
 }
 
+
+
 #dark-mode-links {
     margin: 0 14px 0 0;
     color: white;
@@ -25,5 +27,4 @@
     #light-mode-links, #dark-mode-links:first-child {
         padding-bottom: 14px;
         }
-    
 }
