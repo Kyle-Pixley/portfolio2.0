@@ -70,7 +70,6 @@ const handleContactClassName = () => {
   } else { return 'cheese'}
 }
 
-//TODO write this for the other 2 buttons ^^^^
 
   return (
     <div id={isDarkMode ? 'body-dark' : 'body-light'}>
