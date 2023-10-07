@@ -1,5 +1,30 @@
-#nav-links {
-    display: flex;
-    flex-direction: column;
+#nav-parent {
     margin-top: 8px;
+}
+
+
+
+#dark-mode-links {
+    margin: 0 14px 0 0;
+    color: white;
+}
+#dark-mode-links:visited {
+    color: white;
+}
+
+#light-mode-links {
+    margin: 0 14px 0 0;
+    color: black;
+}
+#light-mode-links:visited {
+    color: black;
+}
+
+@media (max-width: 480px) {
+    #light-mode-links, #dark-mode-links {
+        font-size: 20px;
+    }
+    #light-mode-links, #dark-mode-links:first-child {
+        padding-bottom: 14px;
+        }
 }

@@ -3,7 +3,125 @@
     margin: 0;
 }
 
-body {
-    margin: max(40px, 8vh);
-    /* does whatever the max is ^^ */
+#body-dark {
+    height: 100vh;
+    width: 100vw;
+    background-color: #0a0a0a;
+}
+
+#body-light {
+    height: 100vh;
+    width: 100vw;
+    background-color: #d4d4d4;
+}
+
+#outer-frame-dark {
+    background-image: url(./assets/dark-gray-wooden-background.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+    position: absolute;
+    top: 40px;
+    bottom: 45px;
+    left: 40px;
+    right: 40px;
+    box-shadow: inset 1px 1px 5px #303030, 8px 8px 5px black;
+}
+#outer-frame-light {
+    background-image: url(./assets/white-wooden-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+    position: absolute;
+    top: 40px;
+    bottom: 45px;
+    left: 40px;
+    right: 40px;
+    box-shadow: 5px 5px 5px black, 
+    inset 2px 2px 5px white;
+}
+
+#spacer {
+    height: 20px;
+}
+
+#button-parent {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: flex-start;
+}
+
+#home-link,
+#resume-link, 
+#projects-link, 
+#contact-link {
+    margin: 3px;
+    border: none;
+    cursor: pointer;
+    background: none!important;
+    padding: 3px;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+}
+
+#home-link:hover,
+#resume-link:hover, 
+#projects-link:hover, 
+#contact-link:hover {
+    color: darkgray;
+}
+
+.dark-mode-buttons {
+    color: white;
+}
+
+.light-mode-buttons {
+    color: black;
+}
+
+.active-bullet-dark {
+    background-color: white;
+    margin-top: 7px;
+    margin-left: 4px;
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    font-size: 25px;
+    animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.active-bullet-light {
+    background-color: black;
+    margin-top: 7px;
+    margin-left: 4px;
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    font-size: 25px;
+    animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.cheese {
+    color: green;
+    background-color: yellow;
+}
+
+@-webkit-keyframes slide-right {
+    0% {
+            transform: translateX(-25px);
+    }
+    100% {
+            transform: translateX(-15px);
+    }
+}
+
+@media (max-width: 480px){
+    #outer-frame-dark, #outer-frame-light {
+        padding-top: 16px;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: 50px;
+    }
 }
