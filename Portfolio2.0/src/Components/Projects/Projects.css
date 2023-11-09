@@ -6,26 +6,14 @@
     display: flex;
     flex-direction: column;
 }
-#game {
-    background-image: url('../../assets/game-photo.webp');
+#poke-api {
+    background-image: url('../../assets/pokeball-image.png');
     background-size: cover;
-    height: 100px;
+    height: 140px;
     width: 150px;
-    transform: translateX(100%);
-    animation: slide-left 0.5s ease-in-out forwards;
-    margin-bottom: 20px;
-}
-#airplane {
-    background-image: url('../../assets/airplane-photo.webp');
-    background-size: cover;
-    height: 100px;
-    width: 150px;
+    border: 1px solid black;
     transform: translateX(100%);
     animation: slide-left 0.5s ease-in-out forwards 0.5s;
-}
-#airplane-link {
-    height: 100%;
-    width: 100%;
 }
 
 @keyframes slide-left {

@@ -4,12 +4,10 @@ import './Projects.css'
 function Projects() {
   return (
     <div id='projects-container'>
-        <div id='game'>
-            
+      <a href='https://www.pokeapi.kylepixley.com'>
+        <div id='poke-api'>
         </div>
-        <div id='airplane'>
-          
-        </div>
+      </a>
     </div>
   )
 }
