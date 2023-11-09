@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Header from './Components/Header/Header.jsx'
-import Nav from './Components/Nav/nav.jsx'
+import Nav from './Components/Nav/Nav.jsx'
 import Lightdark from './Components/lightdark/lightdark.jsx'
 import Home from './Components/Home/Home.jsx'
 import Resume from './Components/Resume/Resume.jsx'
