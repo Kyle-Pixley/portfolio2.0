@@ -20,7 +20,7 @@
 #download-resume {
     position: absolute;
     bottom: 8px;
-    left: 8px;
+    left: -20px;
     display: flex;
     justify-content: space-evenly;
     width: 13vw;
@@ -29,19 +29,14 @@
 #download-text-dark {
     color: white;
     font-size: 17px;
+    font-weight: 600;
+    
 }
 #download-text-light {
     color: black;
     font-size: 17px;
-}
-
-#download-image-dark {
-    filter: brightness(0) invert(1) brightness(1.5);
-    height: 17px;
-}
-#download-image-light {
-    color: black;
-    height: 17px;
+    font-weight: 600;
+    
 }
 
 .resume-text-piece {
@@ -252,17 +247,17 @@
 
 @media (max-width: 480px){
     #resume-parent {
-        width: 70vw;
-        bottom: 65px;
+        width: 60vw;
         line-height: 25px;
     }
     #resume-dark, #resume-light {
         font-size: 20px;
     }
     #download-resume {
-        width: 14em;
-        left: auto;
-        right: 8px;
+        display: flex;
+        height: fit-content;
+        left:auto;
+        text-align: center;
     }
     #download-text-dark, #download-text-light {
         font-size: 20px;

@@ -2,7 +2,7 @@
     position: absolute;
     bottom: 10px;
     right: 13px;
-    width: 15vw;
+    width: fit-content;
 }
 
 #contact-dark {

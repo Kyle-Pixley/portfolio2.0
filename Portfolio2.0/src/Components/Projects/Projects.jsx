@@ -7,6 +7,9 @@ function Projects() {
         <div id='game'>
             
         </div>
+        <div id='airplane'>
+          
+        </div>
     </div>
   )
 }

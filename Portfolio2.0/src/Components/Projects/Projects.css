@@ -3,6 +3,8 @@
     right: 18px;
     bottom: 18px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 #game {
     background-image: url('../../assets/game-photo.webp');
@@ -10,7 +12,20 @@
     height: 100px;
     width: 150px;
     transform: translateX(100%);
-    animation: slide-left 0.7s ease-in-out forwards 1s;
+    animation: slide-left 0.5s ease-in-out forwards;
+    margin-bottom: 20px;
+}
+#airplane {
+    background-image: url('../../assets/airplane-photo.webp');
+    background-size: cover;
+    height: 100px;
+    width: 150px;
+    transform: translateX(100%);
+    animation: slide-left 0.5s ease-in-out forwards 0.5s;
+}
+#airplane-link {
+    height: 100%;
+    width: 100%;
 }
 
 @keyframes slide-left {
