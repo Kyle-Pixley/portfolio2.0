@@ -2,7 +2,9 @@
     position: absolute;
     bottom: 10px;
     right: 13px;
-    width: 15vw;
+    width: 18vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-kerning: auto;
 }
 
 #resume-dark {
@@ -20,7 +22,7 @@
 #download-resume {
     position: absolute;
     bottom: 8px;
-    left: -20px;
+    left: -10px;
     display: flex;
     justify-content: space-evenly;
     width: 13vw;
@@ -264,6 +266,12 @@
     }
     #download-image-dark, #download-image-light {
         height: 30px;
+    }
+}
+@media (max-height: 770px) {
+    #resume-parent {
+        max-height: 400px;
+        overflow-y: scroll;
     }
 }
 
