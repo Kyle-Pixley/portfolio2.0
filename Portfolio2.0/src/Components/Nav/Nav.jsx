@@ -11,7 +11,7 @@ function Nav({ isDarkMode }) {
                 style={{ marginTop: '30px' }}
                 href='https://www.linkedin.com/in/kyle-pixley-257686279/'  
                 target='_blank'>
-                    Linkin
+                    Linkedin
             </a>
             <a 
                 id={isDarkMode ? 'dark-mode-links' : 'light-mode-links'}
