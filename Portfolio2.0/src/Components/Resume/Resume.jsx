@@ -196,10 +196,7 @@ function Resume({ isDarkMode }) {
     <a href='./src/assets/Resume.pdf' download id='download-resume'>
               <p id={isDarkMode ? 'download-text-dark' : 'download-text-light'}>
                 <span className='download-text-piece download-text-1'>
-                Download
-                </span>
-                <span className='download-text-piece download-text-2'>
-                Resume
+                Download Resume
                 </span>
                 </p>
         </a>

@@ -6,13 +6,23 @@
     display: flex;
     flex-direction: column;
 }
+
+#poke-api-border {
+    background-color: gray;
+    height: 150px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 2px 2px 1px white;
+    transform: translateX(100%);
+    animation: slide-left 0.5s ease-in-out forwards 0.3s;
+}
 #poke-api {
     background-image: url('../../assets/pokeball-image.png');
     background-size: cover;
     height: 140px;
     width: 150px;
-    transform: translateX(100%);
-    animation: slide-left 0.5s ease-in-out forwards 0.5s;
 }
 
 @keyframes slide-left {
