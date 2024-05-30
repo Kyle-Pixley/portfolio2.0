@@ -10,11 +10,17 @@ function Projects() {
           <div id='poke-api'>
           </div>
         </div>
-        {/*  //Todo add in a description (add lightdark) */}
+      </a>
+
+      <a href='https://blackjack.kylepixley.com'>
+        <div id='blackjack-border'>
+          <div id='blackjack'>
+          </div>
+        </div>
       </a>
 
     </div>
   )
 }
 
-export default Projects
+export default Projects;

@@ -7,7 +7,7 @@
     flex-direction: column;
 }
 
-#poke-api-border {
+#poke-api-border, #blackjack-border {
     background-color: gray;
     height: 150px;
     width: 160px;
@@ -16,6 +16,12 @@
     align-items: center;
     box-shadow: inset 2px 2px 1px white;
     transform: translateX(100%);
+    margin-top: 1vh;
+}
+#poke-api-border {
+    animation: slide-left 0.5s ease-in-out forwards 0.6s;
+}
+#blackjack-border {
     animation: slide-left 0.5s ease-in-out forwards 0.3s;
 }
 #poke-api {
@@ -24,10 +30,17 @@
     height: 140px;
     width: 150px;
 }
+#blackjack {
+    background-image: url('../../assets/Blackjack-image.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 140px;
+    width: 150px;
+}
 
 @keyframes slide-left {
     0% {
-        transform: translateX(100%);
+        transform: translateX(120%);
     }
     100% {
         transform: translateX(0);
