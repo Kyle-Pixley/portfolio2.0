@@ -7,7 +7,7 @@
     flex-direction: column;
 }
 
-#poke-api-border, #blackjack-border {
+#poke-api-border, #blackjack-border, #auto-shop-border {
     background-color: gray;
     height: 150px;
     width: 160px;
@@ -22,7 +22,10 @@
     animation: slide-left 0.5s ease-in-out forwards 0.6s;
 }
 #blackjack-border {
-    animation: slide-left 0.5s ease-in-out forwards 0.3s;
+    animation: slide-left 0.5s ease-in-out forwards 0.4s;
+}
+#auto-shop-border {
+    animation: slide-left 0.5s ease-in-out forwards 0.2s;
 }
 #poke-api {
     background-image: url('../../assets/pokeball-image.png');
@@ -36,6 +39,14 @@
     background-repeat: no-repeat;
     height: 140px;
     width: 150px;
+}
+#auto-shop {
+    background-image: url('../../assets/the-auto-shop-logo.png');
+    background-size: 99% 99%;
+    background-repeat: no-repeat;
+    height: 140px;
+    width: 150px;
+    background-color: white;
 }
 
 @keyframes slide-left {

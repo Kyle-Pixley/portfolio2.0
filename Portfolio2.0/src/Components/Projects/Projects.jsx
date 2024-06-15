@@ -19,6 +19,13 @@ function Projects() {
         </div>
       </a>
 
+      <a href='https://theautoshop.kylepixley.com'>
+        <div id='auto-shop-border'>
+          <div id='auto-shop'>
+          </div>
+        </div>
+      </a>
+
     </div>
   )
 }
