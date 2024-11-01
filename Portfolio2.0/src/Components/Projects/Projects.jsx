@@ -26,6 +26,13 @@ function Projects() {
         </div>
       </a>
 
+      <a href='https://popquiz.kylepixley.com'>
+        <div id='pop-quiz-border'>
+            <div id='pop-quiz'>
+            </div>
+        </div>
+      </a>
+
     </div>
   )
 }
