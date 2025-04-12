@@ -3,11 +3,15 @@
     right: 18px;
     bottom: 18px;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-auto-flow: column;
+    direction: rtl;
+    transform: scaleY(-1);
+    gap: 8px;
 }
 
-#poke-api-border, #blackjack-border, #auto-shop-border, #pop-quiz-border {
+#poke-api-border, #blackjack-border, #auto-shop-border, #pop-quiz-border, #chomiryo-border {
     background-color: gray;
     height: 150px;
     width: 160px;
@@ -16,7 +20,6 @@
     align-items: center;
     box-shadow: inset 2px 2px 1px white;
     transform: translateX(110%);
-    margin-top: 1vh;
 }
 #poke-api-border {
     animation: slide-left 0.5s ease-in-out forwards 0.8s;
@@ -30,34 +33,63 @@
 #pop-quiz-border {
     animation: slide-left 0.5s ease-in-out forwards 0.2s;
 }
+#chomiryo-border {
+    animation: slide-left 0.5s ease-in-out forwards 0.0s;
+}
+#poke-api, #blackjack, #auto-shop, #pop-quiz, #chomiryo {
+    height: 140px;
+    width: 150px;
+    transform: scaleY(-1);
+}
 #poke-api {
     background-image: url('../../assets/pokeball-image.png');
     background-size: cover;
-    height: 140px;
-    width: 150px;
 }
 #blackjack {
     background-image: url('../../assets/Blackjack-image.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 140px;
-    width: 150px;
 }
 #auto-shop {
     background-image: url('../../assets/the-auto-shop-logo.png');
     background-size: 99% 99%;
     background-repeat: no-repeat;
-    height: 140px;
-    width: 150px;
     background-color: white;
 }
 #pop-quiz {
     background-image: url('../../assets/question-mark-image.png');
     background-size: 99% 99%;
     background-repeat: no-repeat;
+    background-color: white;
+}
+#chomiryo {
+    background-image: url('../../assets/egg-sizzle-gif.gif');
+    background-size: cover;
     height: 140px;
     width: 150px;
-    background-color: white;
+}
+.mouse-over-parent {
+    background-color: antiquewhite;
+    height: 140px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.mouse-over {
+    transform: scaleY(-1);
+    direction: rtl;
+    text-decoration: none;
+    color: black;
+    text-align: left;
+    margin-left: 3px;
+}
+.mouse-over-github {
+    text-align: center;
+    text-decoration: underline;
+}
+a {
+    text-decoration: none;
 }
 @media (max-width: 500px) {
     #projects-container {
