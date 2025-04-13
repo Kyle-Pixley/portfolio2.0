@@ -40,8 +40,21 @@ function Projects() {
         onMouseOver={() => setMouseOverPokeApi(true)}
         onMouseLeave={() => setMouseOverPokeApi(false)}>
         <div id='poke-api-border'>
-          <div id='poke-api'>
-          </div>
+
+          { mouseOverPokeApi ? (
+              <div className = 'mouse-over-parent'>
+                <a href='https://github.com/Kyle-Pixley/PokeAPI'
+                    target='_blank'
+                    className='mouse-over mouse-over-github'>
+                  Github
+                </a>
+                <p className='mouse-over'></p>
+                <p className='mouse-over'>React front end application built with public API</p>
+                <h2 className='mouse-over'>Pokemon</h2>
+              </div>
+            ): <div id='poke-api'></div>
+          }
+
         </div>
       </a>
       <a 
@@ -50,8 +63,21 @@ function Projects() {
         onMouseOver={() => setMouseOverBlackjack(true)}
         onMouseLeave={() => setMouseOverBlackjack(false)}>
         <div id='blackjack-border'>
-          <div id='blackjack'>
-          </div>
+
+        { mouseOverBlackjack ? (
+              <div className = 'mouse-over-parent'>
+                <a href='https://github.com/Kyle-Pixley/the-games'
+                    target='_blank'
+                    className='mouse-over mouse-over-github'>
+                  Github
+                </a>
+                <p className='mouse-over'></p>
+                <p className='mouse-over'>React front end application built with public Card API</p>
+                <h2 className='mouse-over'>Blackjack</h2>
+              </div>
+            ): <div id='blackjack'></div>
+          }
+
         </div>
       </a>
       <a 
@@ -60,8 +86,20 @@ function Projects() {
         onMouseOver={() => setMouseOverAutoShop(true)}
         onMouseLeave={() => setMouseOverAutoShop(false)}>
         <div id='auto-shop-border'>
-          <div id='auto-shop'>
-          </div>
+
+        { mouseOverAutoShop ? (
+              <div className = 'mouse-over-parent'>
+                <a href='https://github.com/Kyle-Pixley/the-auto-shop'
+                    target='_blank'
+                    className='mouse-over mouse-over-github'>
+                  Github
+                </a>
+                <p className='mouse-over'>React front end application. Simple business web front</p>
+                <h2 className='mouse-over'>The Auto Shop</h2>
+              </div>
+            ): <div id='auto-shop'></div>
+          }
+
         </div>
       </a>
       <a 
@@ -70,8 +108,21 @@ function Projects() {
         onMouseOver={() => setMouseOverPopQuiz(true)}
         onMouseLeave={() => setMouseOverPopQuiz(false)}>
         <div id='pop-quiz-border'>
-            <div id='pop-quiz'>
-            </div>
+
+        { mouseOverPopQuiz ? (
+              <div className = 'mouse-over-parent'>
+                <a href='https://github.com/Kyle-Pixley/pop-quiz'
+                    target='_blank'
+                    className='mouse-over mouse-over-github'>
+                  Github
+                </a>
+                <p className='mouse-over'></p>
+                <p className='mouse-over'>React front end application built with public trivia API</p>
+                <h2 className='mouse-over'>Pop Quiz</h2>
+              </div>
+            ): <div id='pop-quiz'></div>
+          }
+
         </div>
       </a>
     </div>

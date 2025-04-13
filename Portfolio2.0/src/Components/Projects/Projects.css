@@ -19,22 +19,22 @@
     justify-content: center;
     align-items: center;
     box-shadow: inset 2px 2px 1px white;
-    transform: translateX(110%);
+    transform: translateX(210%);
 }
 #poke-api-border {
-    animation: slide-left 0.5s ease-in-out forwards 0.8s;
+    animation: slide-left 0.5s ease-in-out forwards 0.4s;
 }
 #blackjack-border {
     animation: slide-left 0.5s ease-in-out forwards 0.6s;
 }
 #auto-shop-border {
-    animation: slide-left 0.5s ease-in-out forwards 0.4s;
+    animation: slide-left 0.5s ease-in-out forwards 0.8s;
 }
 #pop-quiz-border {
-    animation: slide-left 0.5s ease-in-out forwards 0.2s;
+    animation: slide-left 0.5s ease-in-out forwards 1.18s;
 }
 #chomiryo-border {
-    animation: slide-left 0.5s ease-in-out forwards 0.0s;
+    animation: slide-left 0.5s ease-in-out forwards 0.2s;
 }
 #poke-api, #blackjack, #auto-shop, #pop-quiz, #chomiryo {
     height: 140px;
@@ -69,7 +69,7 @@
     width: 150px;
 }
 .mouse-over-parent {
-    background-color: antiquewhite;
+    background-color: aliceblue;
     height: 140px;
     width: 150px;
     display: flex;
@@ -87,6 +87,9 @@
 .mouse-over-github {
     text-align: center;
     text-decoration: underline;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 a {
     text-decoration: none;
@@ -94,30 +97,33 @@ a {
 @media (max-width: 500px) {
     #projects-container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 10px;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 5px;
+        right: 10px;
     }
     #poke-api-border, #blackjack-border, #auto-shop-border, #pop-quiz-border {
         transform: translateX(210%);
     }
     #poke-api-border {
-        animation: slide-left 0.5s ease-in-out forwards 1.3s;
+        animation: slide-left 0.5s ease-in-out forwards 0.3s;
     }
     #blackjack-border {
-        animation: slide-left 0.5s ease-in-out forwards 0.9s;
-    }
-    #auto-shop-border {
         animation: slide-left 0.5s ease-in-out forwards 0.5s;
     }
+    #auto-shop-border {
+        animation: slide-left 0.5s ease-in-out forwards 0.9s;
+    }
     #pop-quiz-border {
+        animation: slide-left 0.5s ease-in-out forwards 1.2s;
+    }
+    #chomiryo-border {
         animation: slide-left 0.5s ease-in-out forwards 0.1s;
     }
 }
 
 @keyframes slide-left {
     0% {
-        transform: translateX(120%);
+        transform: translateX(220%);
     }
     100% {
         transform: translateX(0);
