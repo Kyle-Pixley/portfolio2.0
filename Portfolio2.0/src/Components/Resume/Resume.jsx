@@ -193,20 +193,13 @@ function Resume({ isDarkMode }) {
 </span>
         </div>
     </div>
-        <div id='download-resume'>
+    <a href='./src/assets/Resume.pdf' download id='download-resume'>
               <p id={isDarkMode ? 'download-text-dark' : 'download-text-light'}>
                 <span className='download-text-piece download-text-1'>
-                Download &nbsp;
-                </span>
-                <span className='download-text-piece download-text-2'>
-                Resume
+                Download Resume
                 </span>
                 </p>
-          <a href='./src/assets/Resume.pdf' download>
-              <img id={isDarkMode ? 'download-image-dark' : 'download-image-light'}  
-              src={ResumeDownload} alt='download'/>
-          </a>
-        </div>
+        </a>
     </>
   )
 }

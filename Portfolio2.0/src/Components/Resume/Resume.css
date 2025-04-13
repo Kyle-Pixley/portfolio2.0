@@ -2,7 +2,9 @@
     position: absolute;
     bottom: 10px;
     right: 13px;
-    width: 15vw;
+    width: 18vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-kerning: auto;
 }
 
 #resume-dark {
@@ -20,7 +22,7 @@
 #download-resume {
     position: absolute;
     bottom: 8px;
-    left: 8px;
+    left: -10px;
     display: flex;
     justify-content: space-evenly;
     width: 13vw;
@@ -29,19 +31,12 @@
 #download-text-dark {
     color: white;
     font-size: 17px;
+    font-weight: 600;
 }
 #download-text-light {
     color: black;
     font-size: 17px;
-}
-
-#download-image-dark {
-    filter: brightness(0) invert(1) brightness(1.5);
-    height: 17px;
-}
-#download-image-light {
-    color: black;
-    height: 17px;
+    font-weight: 600;
 }
 
 .resume-text-piece {
@@ -240,35 +235,40 @@
     display: inline-block;
     opacity: 0;
     filter: blur(4px);
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .download-text-1 {
     animation: fade-in 0.4s 3.6s forwards cubic-bezier(0.11, 0, 0.5,0);
 }
-.download-text-2 {
-    animation: fade-in 0.4s 3.4s forwards cubic-bezier(0.11, 0, 0.5,0);
-}
 
 
 @media (max-width: 480px){
     #resume-parent {
-        width: 70vw;
-        bottom: 65px;
+        width: 60vw;
         line-height: 25px;
     }
     #resume-dark, #resume-light {
         font-size: 20px;
     }
     #download-resume {
-        width: 14em;
-        left: auto;
-        right: 8px;
+        display: flex;
+        height: fit-content;
+        left:auto;
+        text-align: center;
     }
     #download-text-dark, #download-text-light {
         font-size: 20px;
     }
     #download-image-dark, #download-image-light {
         height: 30px;
+    }
+}
+@media (max-height: 770px) {
+    #resume-parent {
+        max-height: 400px;
+        overflow-y: scroll;
     }
 }
 
