@@ -8,6 +8,7 @@ function Projects() {
   const [ mouseOverBlackjack, setMouseOverBlackjack ] = useState(false);
   const [ mouseOverAutoShop, setMouseOverAutoShop ] = useState(false);
   const [ mouseOverPopQuiz, setMouseOverPopQuiz ] = useState(false);
+  const [ mouseOverWatchList, setMouseOverWatchList ] = useState(false);
   return (
     <div id='projects-container'>
 
@@ -116,7 +117,6 @@ function Projects() {
                     className='mouse-over mouse-over-github'>
                   Github
                 </a>
-                <p className='mouse-over'></p>
                 <p className='mouse-over'>React front end application built with public trivia API</p>
                 <h2 className='mouse-over'>Pop Quiz</h2>
               </div>
@@ -124,6 +124,27 @@ function Projects() {
           }
 
         </div>
+      </a>
+      <a
+        href="https://watchlist.kylepixley.com"
+        target='_blank'
+        onMouseOver={() => setMouseOverWatchList(true)}
+        onMouseLeave={() => setMouseOverWatchList(false)}>
+          <div id='watch-list-border'>
+            { mouseOverWatchList ? (
+              <div className='mouse-over-parent'>
+                <a href='https://github.com/Kyle-Pixley/WatchList'
+                    target='_blank'
+                    className='mouse-over mouse-over-github'>
+                  Github
+                </a>
+                <p className='mouse-over'>Vanilla Javascript and Typescript application built with OMDBapi. Styled with TailWindCSS</p>
+                <h2 className='mouse-over'>Watch List</h2>
+              </div>
+            ): <div id='watch-list'></div>
+            }
+          </div>
+
       </a>
     </div>
   )

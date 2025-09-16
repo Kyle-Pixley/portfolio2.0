@@ -11,7 +11,7 @@
     gap: 8px;
 }
 
-#poke-api-border, #blackjack-border, #auto-shop-border, #pop-quiz-border, #chomiryo-border {
+#poke-api-border, #blackjack-border, #auto-shop-border, #pop-quiz-border, #chomiryo-border, #watch-list-border {
     background-color: gray;
     height: 150px;
     width: 160px;
@@ -36,7 +36,10 @@
 #chomiryo-border {
     animation: slide-left 0.5s ease-in-out forwards 0.2s;
 }
-#poke-api, #blackjack, #auto-shop, #pop-quiz, #chomiryo {
+#watch-list-border {
+    animation: slide-left 0.4s ease-in-out forwards 1.3s;
+}
+#poke-api, #blackjack, #auto-shop, #pop-quiz, #chomiryo, #watch-list {
     height: 140px;
     width: 150px;
     transform: scaleY(-1);
@@ -60,11 +63,19 @@
     background-image: url('../../assets/question-mark-image.png');
     background-size: 99% 99%;
     background-repeat: no-repeat;
-    background-color: white;
+    background-color: aliceblue;
 }
 #chomiryo {
     background-image: url('../../assets/egg-sizzle-gif.gif');
     background-size: cover;
+    height: 140px;
+    width: 150px;
+}
+#watch-list {
+    background-image: url('../../assets/movie-icon.png');
+    background-size: cover;
+    background-position: center;
+    background-color: aliceblue;
     height: 140px;
     width: 150px;
 }
