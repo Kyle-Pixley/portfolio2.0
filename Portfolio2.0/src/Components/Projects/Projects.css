@@ -22,22 +22,22 @@
     transform: translateX(210%);
 }
 #poke-api-border {
-    animation: slide-left 0.5s ease-in-out forwards 0.4s;
-}
-#blackjack-border {
-    animation: slide-left 0.5s ease-in-out forwards 0.6s;
-}
-#auto-shop-border {
-    animation: slide-left 0.5s ease-in-out forwards 0.8s;
-}
-#pop-quiz-border {
-    animation: slide-left 0.5s ease-in-out forwards 1.18s;
-}
-#chomiryo-border {
     animation: slide-left 0.5s ease-in-out forwards 0.2s;
 }
+#blackjack-border {
+    animation: slide-left 0.5s ease-in-out forwards 0.3s;
+}
+#auto-shop-border {
+    animation: slide-left 0.5s ease-in-out forwards 0.4s;
+}
+#pop-quiz-border {
+    animation: slide-left 0.5s ease-in-out forwards 0.6s;
+}
+#chomiryo-border {
+    animation: slide-left 0.5s ease-in-out forwards 0.1s;
+}
 #watch-list-border {
-    animation: slide-left 0.4s ease-in-out forwards 1.3s;
+    animation: slide-left 0.4s ease-in-out forwards 0.7s;
 }
 #poke-api, #blackjack, #auto-shop, #pop-quiz, #chomiryo, #watch-list {
     height: 140px;
